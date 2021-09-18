@@ -1,0 +1,11 @@
+create database banco_de_dados;
+use banco_de_dados;
+
+drop table usuario;
+CREATE TABLE usuario (
+  id int auto_increment primary key,
+  name varchar(50),
+  user varchar(40) unique key,
+  email varchar(60) unique key,
+  password varchar(100)
+);
